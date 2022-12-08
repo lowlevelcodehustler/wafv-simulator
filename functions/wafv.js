@@ -4,6 +4,12 @@ var imageUrls = [
 ];
 
 var img = document.getElementById('flipatrandom');
-img.addEventListener("click", function() {
-    this.src = imageUrls[Math.floor(Math.random() * imageUrls.length)];
-});
+var time = 1200000;
+
+setInterval(wafv, 1200000);
+
+function wafv() {
+ img.addEventListener("click", function() {
+     this.src = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+})
+ });
